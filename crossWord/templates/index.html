@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Crosswords</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Crosswords</h1>
+        
+        <div class="controls">
+            <label for="grid-size">Grid Size:</label>
+            <select id="grid-size">
+                <option value="10">10 x 10</option>
+                <option value="15" selected>15 x 15</option>
+                <option value="20">20 x 20</option>
+            </select>
+            <button id="generate-btn">Generate New Puzzle</button>
+        </div>
+        
+        <div class="game-container">
+            <div class="crossword-container">
+                <div id="crossword-grid"></div>
+                <div id="controls">
+                    <button id="check-btn">Check Answers</button>
+                    <button id="reveal-btn">Reveal Solution</button>
+                    <button id="clear-btn">Clear Grid</button>
+                </div>
+            </div>
+            
+            <div class="clues-container">
+                <div class="clues-section">
+                    <h3>Across</h3>
+                    <ul id="across-clues"></ul>
+                </div>
+                <div class="clues-section">
+                    <h3>Down</h3>
+                    <ul id="down-clues"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="message"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
+
