@@ -2,11 +2,11 @@ import requests
 
 def get_live_weather(city):
     access_key = 'YOUR_ACCESS_KEY'  
-    base_url = "http://api.weatherstack.com/current"
+    base_url = ""
     
     # Prepare parameters for the API request
     params = {
-        "access_key": 'ddaa34bd221f6997ead87a1089e3e2c5',
+        "access_key": '',
         "query": city,
         "units": "m"  # "m" for metric (°C), change to "f" for Fahrenheit if desired
     }
