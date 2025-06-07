@@ -14,7 +14,7 @@ def get_local_ip():
 
 def get_public_ip():
     try:
-        public_ip = requests.get("https://api.ipify.org").text
+        public_ip = requests.get("").text
     except Exception as e:
         public_ip = "Unable to determine public IP"
     return public_ip
