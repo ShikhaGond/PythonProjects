@@ -10,7 +10,7 @@ root.geometry("700x400")
 
 # Function to open Google Maps with the selected location
 def open_map():
-   map_url = f"https://www.google.com/maps/search/?api=1&query={country_var.get().replace(' ', '+')}"
+   map_url = f"https://www.google.com/maps&query={country_var.get().replace(' ', '+')}"
    webbrowser.open(map_url)
 
 # Function to update the map and time display
